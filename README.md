@@ -138,7 +138,7 @@ crud-backend/
 ## Developer
 - **Mayur Dilip Kamble**
   - **Email**: [mayurkamble0250@gmail.com](mailto:mayurkamble0250@gmail.com)
-  - **GitHub**: [mayurk224](https://github.com/yourusername)
+  - **GitHub**: [mayurk224](https://github.com/mayurk224)
 
 ## Contributing
 Contributions are welcome! Feel free to open an issue or submit a pull request.
