@@ -1,3 +1,7 @@
+Here's the updated README file with your new deployment details:
+
+---
+
 # CRUD Backend Project
 
 A simple backend application using the **MEN** (MongoDB, Express.js, Node.js) stack for performing basic CRUD (Create, Read, Update, Delete) operations. This project provides a RESTful API for managing product data in a MongoDB database.
@@ -11,6 +15,7 @@ A simple backend application using the **MEN** (MongoDB, Express.js, Node.js) st
   - [Running the Server](#running-the-server)
 - [API Endpoints](#api-endpoints)
 - [Folder Structure](#folder-structure)
+- [Deployed URL](#deployed-url)
 - [Developer](#developer)
 - [Contributing](#contributing)
 - [License](#license)
@@ -51,7 +56,6 @@ A simple backend application using the **MEN** (MongoDB, Express.js, Node.js) st
    - Create a `.env` file in the root directory.
    - Add the following variables:
      ```
-     PORT=5000
      MONGODB_URI=your_mongodb_connection_string
      ```
 
@@ -63,17 +67,17 @@ Start the server with:
 ```bash
 npm run start
 ```
-The server will run at `http://localhost:3000`.
+The server will run at `http://localhost:3000` (or your specified PORT). When deployed, it will use the deployed URL.
 
 ### API Endpoints
 
-| HTTP Method | Endpoint             | Description               |
-|-------------|----------------------|---------------------------|
-| GET         | `/api/products`      | Get all products          |
-| GET         | `/api/products/:id`  | Get a single product by ID|
-| POST        | `/api/products`      | Create a new product      |
-| PUT         | `/api/products/:id`  | Update a product by ID    |
-| DELETE      | `/api/products/:id`  | Delete a product by ID    |
+| HTTP Method | Endpoint                    | Description               |
+|-------------|-----------------------------|---------------------------|
+| GET         | `/api/products`            | Get all products          |
+| GET         | `/api/products/:id`        | Get a single product by ID|
+| POST        | `/api/products`            | Create a new product      |
+| PUT         | `/api/products/:id`        | Update a product by ID    |
+| DELETE      | `/api/products/:id`        | Delete a product by ID    |
 
 #### Sample Request & Response
 
@@ -85,7 +89,7 @@ The server will run at `http://localhost:3000`.
     {
       "_id": "5f5c2c7e4f1a3d2c45678901",
       "name": "Sample Product",
-      "description": "This is a sample product",
+      "quantity": 10,
       "price": 199.99
     }
   ]
@@ -97,7 +101,7 @@ The server will run at `http://localhost:3000`.
   ```json
   {
     "name": "New Product",
-    "description": "Description of the new product",
+    "quantity": 30,
     "price": 99.99
   }
   ```
@@ -107,7 +111,7 @@ The server will run at `http://localhost:3000`.
   {
     "_id": "5f5c2c7e4f1a3d2c45678902",
     "name": "New Product",
-    "description": "Description of the new product",
+    "quantity": 30,
     "price": 99.99
   }
   ```
@@ -128,10 +132,13 @@ crud-backend/
 └── README.md
 ```
 
+## Deployed URL
+- The backend API is live at: [https://curd-api-men.onrender.com/api/products](https://curd-api-men.onrender.com/api/products)
+
 ## Developer
 - **Mayur Dilip Kamble**
   - **Email**: [mayurkamble0250@gmail.com](mailto:mayurkamble0250@gmail.com)
-  - **GitHub**: [Mayur Kamble](https://github.com/mayurk224)
+  - **GitHub**: [mayurk224](https://github.com/yourusername)
 
 ## Contributing
 Contributions are welcome! Feel free to open an issue or submit a pull request.
